@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      .red {
+        background-color: red;
+        width: 200px;
+        height: 120px;
+      }
+      /* background repeat position css */
+      .image {
+        background-image: url("../assets/images/back-1.png");
+        background-repeat: repeat;
+        background-position: top right;
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        display: inline-block;
+        /* 넘친 콘텐트를 처리하는 기능 */
+        overflow: scroll;
+      }
+      /* backroun d 이미지는 고정되고 텍스트만 이동*/
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+      /*  backround 이미지는 고정되고 텍스트만 이동하지만 전체 스크롤 움직일때는
+      이미지가 고정되고 텍스트만 이동*/
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+      /* backround 이미지와 같이 텍스트도 이동 */
+      .attachment-local {
+        background-attachment: local;
+      }
+      .background-size {
+        width: 600px;
+        height: 300px;
+        background-image: url(../assets/images/soccerball.jpg);
+        background-repeat: no-repeat;
+        /* 자주 사용 */
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(to right, red 30%, blue);
+      }
+      .radial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(
+          circle at 10% 50%,
+          white,
+          yellow,
+          red,
+          blue
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+    <h3>background-image</h3>
+    <div class="image attachment-scroll">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est harum optio,
+      libero dicta facilis reiciendis itaque illum, saepe, accusantium
+      perspiciatis nemo quas dignissimos fugiat sit excepturi ea accusamus.
+      Consequatur, natus? A, iusto non nihil inventore quod nostrum tempore
+      eligendi quos adipisci officiis. Obcaecati minima labore eum temporibus
+      doloremque repellat possimus voluptas asperiores, laborum nostrum
+      consequatur soluta reiciendis facere vel vero. Animi vero aut perferendis
+      quasi quisquam eaque dolores voluptates. Totam laboriosam excepturi
+      perferendis eos sunt quam accusantium commodi nobis cupiditate! Aperiam
+      earum itaque a. Maiores sed a commodi cum eligendi. Aspernatur debitis
+      pariatur corporis ullam perferendis, blanditiis tempore molestias numquam
+      delectus reprehenderit rerum, cum est atque minus eum dolor vero
+      cupiditate. Ipsam fugiat voluptates sed, voluptate cum molestias
+      praesentium vero. Excepturi quas eligendi modi minima est at incidunt
+      totam dolorum exercitationem, esse quam! Molestias nam reprehenderit ut id
+      incidunt nemo vero alias. Non et maiores recusandae beatae. Impedit,
+      incidunt hic? Reiciendis minus veritatis suscipit iusto temporibus optio
+      dolor. Ea mollitia necessitatibus id accusantium porro, non quam possimus
+      architecto veniam explicabo rerum sequi enim nulla perferendis voluptatum,
+      quasi commodi. Voluptas, at. Impedit nisi tenetur dolorum optio beatae
+      soluta, ab nihil quis ea possimus culpa. Debitis iusto excepturi molestiae
+      cupiditate, expedita sequi animi deserunt beatae. Exercitationem porro est
+      accusamus at sit recusandae? Natus voluptatibus esse nulla minima
+      dignissimos eveniet accusamus molestias consequuntur voluptate hic
+      perferendis dolorum fugit officiis dolores, magnam porro quae?
+      Exercitationem laboriosam ipsum deleniti voluptatem. Corrupti molestias
+      fugit eligendi temporibus.
+    </div>
+    <div class="image attachment-fixed">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est harum optio,
+      libero dicta facilis reiciendis itaque illum, saepe, accusantium
+      perspiciatis nemo quas dignissimos fugiat sit excepturi ea accusamus.
+      Consequatur, natus? A, iusto non nihil inventore quod nostrum tempore
+      eligendi quos adipisci officiis. Obcaecati minima labore eum temporibus
+      doloremque repellat possimus voluptas asperiores, laborum nostrum
+      consequatur soluta reiciendis facere vel vero. Animi vero aut perferendis
+      quasi quisquam eaque dolores voluptates. Totam laboriosam excepturi
+      perferendis eos sunt quam accusantium commodi nobis cupiditate! Aperiam
+      earum itaque a. Maiores sed a commodi cum eligendi. Aspernatur debitis
+      pariatur corporis ullam perferendis, blanditiis tempore molestias numquam
+      delectus reprehenderit rerum, cum est atque minus eum dolor vero
+      cupiditate. Ipsam fugiat voluptates sed, voluptate cum molestias
+      praesentium vero. Excepturi quas eligendi modi minima est at incidunt
+      totam dolorum exercitationem, esse quam! Molestias nam reprehenderit ut id
+      incidunt nemo vero alias. Non et maiores recusandae beatae. Impedit,
+      incidunt hic? Reiciendis minus veritatis suscipit iusto temporibus optio
+      dolor. Ea mollitia necessitatibus id accusantium porro, non quam possimus
+      architecto veniam explicabo rerum sequi enim nulla perferendis voluptatum,
+      quasi commodi. Voluptas, at. Impedit nisi tenetur dolorum optio beatae
+      soluta, ab nihil quis ea possimus culpa. Debitis iusto excepturi molestiae
+      cupiditate, expedita sequi animi deserunt beatae. Exercitationem porro est
+      accusamus at sit recusandae? Natus voluptatibus esse nulla minima
+      dignissimos eveniet accusamus molestias consequuntur voluptate hic
+      perferendis dolorum fugit officiis dolores, magnam porro quae?
+      Exercitationem laboriosam ipsum deleniti voluptatem. Corrupti molestias
+      fugit eligendi temporibus.
+    </div>
+    <div class="image attachment-local">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est harum optio,
+      libero dicta facilis reiciendis itaque illum, saepe, accusantium
+      perspiciatis nemo quas dignissimos fugiat sit excepturi ea accusamus.
+      Consequatur, natus? A, iusto non nihil inventore quod nostrum tempore
+      eligendi quos adipisci officiis. Obcaecati minima labore eum temporibus
+      doloremque repellat possimus voluptas asperiores, laborum nostrum
+      consequatur soluta reiciendis facere vel vero. Animi vero aut perferendis
+      quasi quisquam eaque dolores voluptates. Totam laboriosam excepturi
+      perferendis eos sunt quam accusantium commodi nobis cupiditate! Aperiam
+      earum itaque a. Maiores sed a commodi cum eligendi. Aspernatur debitis
+      pariatur corporis ullam perferendis, blanditiis tempore molestias numquam
+      delectus reprehenderit rerum, cum est atque minus eum dolor vero
+      cupiditate. Ipsam fugiat voluptates sed, voluptate cum molestias
+      praesentium vero. Excepturi quas eligendi modi minima est at incidunt
+      totam dolorum exercitationem, esse quam! Molestias nam reprehenderit ut id
+      incidunt nemo vero alias. Non et maiores recusandae beatae. Impedit,
+      incidunt hic? Reiciendis minus veritatis suscipit iusto temporibus optio
+      dolor. Ea mollitia necessitatibus id accusantium porro, non quam possimus
+      architecto veniam explicabo rerum sequi enim nulla perferendis voluptatum,
+      quasi commodi. Voluptas, at. Impedit nisi tenetur dolorum optio beatae
+      soluta, ab nihil quis ea possimus culpa. Debitis iusto excepturi molestiae
+      cupiditate, expedita sequi animi deserunt beatae. Exercitationem porro est
+      accusamus at sit recusandae? Natus voluptatibus esse nulla minima
+      dignissimos eveniet accusamus molestias consequuntur voluptate hic
+      perferendis dolorum fugit officiis dolores, magnam porro quae?
+      Exercitationem laboriosam ipsum deleniti voluptatem. Corrupti molestias
+      fugit eligendi temporibus.
+    </div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>
