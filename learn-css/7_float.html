@@ -1,0 +1,64 @@
+<!--flat속성
+만약 HTML요소에 flat이 적용되면 HMTL요소는 원래의 흐름에서 벗어나 
+둥둥 떠다니듯 배치가 됩니다.  
+
+flat 속성값
+none : 기본값으로 요소를 띄우지 않음
+left : 왼쪽에 띄움
+right : 오른쪽에 띄움
+inherit : 부모 요소로부터 상속함
+initial 기본값으로 설정함
+
+clear 속성값
+clear : none; - 기본값
+clear : left; - 왼쪽을 취소
+clear : right; - 오른쪽을 취소
+clear : both; - 왼쪽 오른쪽 둘다 취소
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <style>
+      .container {
+        width: 800px;
+        border: 1px solid grey;
+      }
+      img {
+        width: 300px;
+      }
+      .float-left {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      .float-right {
+        float: right;
+      }
+      p {
+        border: 1px solid blue;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="float-left" src="../assets/images/ice_1.jpg" alt="" />
+      <p>
+        빙수(氷水, 문화어: 단얼음, 영어: shaved ice)는 잘게 부수어진 얼음에 당밀
+        또는 설탕과 그밖의 감미료를 섞은 얼음과자이다. 주재료인 얼음은, 과거에는
+        천연 얼음이 쓰였지만 나중에는 인조 얼음이
+      </p>
+      <p class="clear">
+        빙수(氷水, 문화어: 단얼음, 영어: shaved ice)는 잘게 부수어진 얼음에 당밀
+        또는 설탕과 그밖의 감미료를 섞은 얼음과자이다. 주재료인 얼음은, 과거에는
+        천연 얼음이 쓰였지만 나중에는 인조 얼음이
+      </p>
+    </div>
+  </body>
+</html>
